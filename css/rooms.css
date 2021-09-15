@@ -1,0 +1,16 @@
+.rooms{
+    line-height: 40px;
+    padding: 10px 32px;
+    width: 1290px;
+}.rooms a {
+     background-color: #4CAF50;
+     color: white;
+     text-align: center;
+     padding: 10px 12px;
+     overflow: hidden;
+     text-decoration: none;
+ }.rooms img{
+       width: 400px;
+       float: left;
+       padding: 7px 12px;
+   }

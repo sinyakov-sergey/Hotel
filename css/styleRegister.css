@@ -1,0 +1,12 @@
+form{
+    width: 383px;
+    float: left;
+}
+a {
+    color: #4CAF50;
+    font-family: helvetica;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}

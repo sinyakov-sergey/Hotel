@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Управление отелем</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/top.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Выйти</a>
+    </div>
+    <h1>Здравствуйте admin</h1>
+    <form action="changePrice.php" method="post" style="float: left">
+        <select name="room" style="margin: 10px;">
+            <option value = 1>SMART Стандарт одноместный</option>
+            <option value = 2>Представительский номер двухместный</option>
+            <option value = 3>Полулюкс трехместный</option>
+        </select>
+        <input type="text" class="form-control" name="price" style="width: 320px; margin: 10px;"
+               placeholder="Введите цену"><br>
+        <button class="btn btn-success" type="submit" style="background-color: #4CAF50; margin: 10px;">
+               Изменить цену</button>
+        <span><?php echo $answer; ?></span>
+    </form>
+    <form action="changeCount.php" method="post" style="float: left">
+        <select name="room1" style="margin: 10px;">
+            <option value = 1>SMART Стандарт одноместный</option>
+            <option value = 2>Представительский номер двухместный</option>
+            <option value = 3>Полулюкс трехместный</option>
+        </select>
+        <input type="text" class="form-control" name="count" style="width: 320px; margin: 10px;"
+               placeholder="Введите количество номеров"><br>
+        <button class="btn btn-success" type="submit" style="background-color: #4CAF50; margin: 10px;">
+               Изменить количество номеров</button>
+        <span><?php echo $answer1; ?></span>
+    </form>
+
+    <form action="weekend.php" method="post" style="padding: 0px 12px;">
+        <h2>Остановить работу отеля</h2>
+        <input name="day" type="date" style="margin: 20px" data-date-inline-picker="true"/>
+        <br>
+        <button class="btn btn-success" type="submit" style="background-color: #4CAF50; margin: 20px">
+            Сделать выходным</button>
+        <span><?php echo $answer2; ?></span>
+    </form>
+</body>
+</html>

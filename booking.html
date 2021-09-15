@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/top.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="price.php">Наши номера</a>
+        <a href="history.php">Личный кабинет</a>
+        <a href="index.html">Выйти</a>
+    </div>
+    <div style="padding: 30px 92px;">
+        <form action="book.php" method="post">
+            <ruby style="font-size: 50px;">заезд </ruby>
+            <ruby style="margin: 60px; font-size: 50px;">выезд</ruby>
+            <ruby style="font-size: 50px;">номер</ruby>
+            <br>
+            <input name="in" type="date" data-date-inline-picker="true"/>
+            <input name="out" type="date" data-date-inline-picker="true" style="margin: 30px"/>
+            <select name="room" style="margin: 10px;">
+                <option value = 1>SMART Стандарт одноместный</option>
+                <option value = 2>Представительский номер двухместный</option>
+                <option value = 3>Полулюкс трехместный</option>
+            </select>
+            <br>
+            <button class="btn btn-success" type="submit" style="background-color: #4CAF50">Проверить наличие</button>
+            <br>
+            <span><?php echo $book; ?></span>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

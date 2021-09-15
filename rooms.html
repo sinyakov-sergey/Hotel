@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Номера</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/rooms.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="price.php">Наши номера</a>
+        <a href="history.php">Личный кабинет</a>
+        <a href="index.html">Выйти</a>
+    </div>
+    <div class="rooms">
+        <img src="pictures/diningRoom.jpg">
+        <h1>GREEN HOTTEL</h1>
+        Имеются места для курения. Для удобства наших гостей работает лифт.
+        Уборка номера – ежедневно. Стойка регистрации гостиницы работает круглосуточно.
+        Все номера оборудованы кондиционерами.<br>
+        В каждом номере нашего отеля работает бесплатный Wi-Fi.
+        Парковка для автомобиля на территории отеля предоставляется бесплатно.
+        Работает круглосуточная служба безопасности. Уборка номера – ежедневно.<br>
+        В холле отеля работает банкомат Сбербанка.
+    </div>
+    <div class="rooms">
+        <img src="pictures/1.jpg">
+        <h1>SMART Стандарт одноместный</h1>
+        Одноместные номера площадью 14 кв.м.<br>
+        Благодаря лаконичному дизайну и функциональному оснащению
+        в номере созданы все условия для комфортного проживания.<br>
+        <span><?php echo $first; ?></span>₽ за сутки<br>
+        <a href="booking.html">Забронировать номер</a>
+    </div>
+    <div class="rooms">
+        <img src="pictures/2.jpg">
+        <h1>Представительский номер двухместный</h1>
+        Двухместные номера площадью 20 кв.м.<br>
+        Уютный номер для размещения двух человек.<br>
+        <span><?php echo $second; ?></span>₽ за сутки<br>
+        <a href="booking.html">Забронировать номер</a>
+    </div>
+    <div class="rooms">
+        <img src="pictures/3.jpg">
+        <h1>Полулюкс трехместный</h1>
+        Трехместный номера площадью 32 кв.м.<br>
+        Просторные номера с большой кроватью и разделением на спальную,
+        рабочую и гостевую зону для длительного пребывания.<br>
+        <span><?php echo $third; ?></span>₽ за сутки<br>
+        <a href="booking.html">Забронировать номер</a>
+    </div>
+</body>
+</html>

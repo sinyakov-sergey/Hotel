@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GREEN_HOTEL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleRegister.css">
+</head>
+<body>
+    <div style="text-align: center">
+    <a href="index.html" >green hotel</a>
+    </div>
+    <div class="container mt-4" >
+        <form action="checkRegister.php" method="post">
+            <h1>Форма регистрации</h1>
+            <input type="text" class="form-control" name="login" id="login" placeholder="Введите логин"><br>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя"><br>
+            <input type="password" class="form-control" name="pass" id="pass" placeholder="Введите пароль"><br>
+            <button class="btn btn-success" type="submit" style="background-color: #4CAF50">Зарегистрировать</button>
+            <font color="red"><span><?php echo $er; ?></span></font>
+        </form>
+        <img src="pictures/greenHotel.jpg" style="float: right" width="720">
+    </div>
+    <div class="container mt-4" >
+        <form action="checkIn.php" method="post">
+            <h1>Войти на сайт</h1>
+            <input type="text" class="form-control" name="login1" id="login1" placeholder="Введите логин"><br>
+            <input type="password" class="form-control" name="pass1" id="pass1" placeholder="Введите пароль"><br>
+            <button class="btn btn-success" type="submit" style="background-color: #4CAF50">Войти</button>
+            <font color="red"><span><?php echo $er1; ?></span></font>
+        </form>
+    </div>
+
+
+</body>
+</html>
